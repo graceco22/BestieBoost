@@ -16,23 +16,28 @@ const LeaderboardPage = async () => {
   );
 
   return (
-    <div className="flex flex-row-reverse gap-[48px] px-6" style={{ backgroundImage: 'url(/back2.png)' }}>
+    <div className="flex flex-row-reverse gap-[48px] px-6" style={{ backgroundImage: 'url(/back.png)' }}>
 
       <FeedWrapper>
         <div className="flex w-full flex-col items-center">
-          <Image
+          {/* <Image
             src="/chat.png"
             alt="Leaderboard"
             height={90}
             width={90}
-          />
+          /> */}
 
-          <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
+          <img
+            src="/bestc.png" 
+            height={100}
+            width={500}
+          />
+          {/* <h1 className="my-6 text-center text-2xl font-bold text-neutral-800">
             Bestie Chat
           </h1>
           <p className="mb-6 text-center text-lg text-muted-foreground">
             Ask me anything about your health journey!
-          </p>
+          </p> */}
 
           <br></br>
           <br></br>
