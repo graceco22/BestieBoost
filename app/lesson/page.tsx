@@ -2,8 +2,6 @@ import { redirect } from "next/navigation";
 
 import { getLesson, getUserProgress, getUserSubscription } from "@/db/queries";
 
-import { Quiz } from "./quiz";
-
 const LessonPage = async () => {
   const lessonData = getLesson();
   const userProgressData = getUserProgress();
@@ -23,13 +21,7 @@ const LessonPage = async () => {
     100;
 
   return (
-    <Quiz
-      initialLessonId={lesson.id}
-      initialLessonChallenges={lesson.challenges}
-      initialHearts={userProgress.hearts}
-      initialPercentage={initialPercentage}
-      userSubscription={userSubscription}
-    />
+    <div></div>
   );
 };
 
