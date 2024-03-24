@@ -1,27 +1,17 @@
-import { redirect } from "next/navigation";
+"use client"
+import React, { useEffect } from 'react';
 
-import { getLesson, getUserProgress, getUserSubscription } from "@/db/queries";
-
-const LessonPage = async () => {
-  const lessonData = getLesson();
-  const userProgressData = getUserProgress();
-  const userSubscriptionData = getUserSubscription();
-
-  const [lesson, userProgress, userSubscription] = await Promise.all([
-    lessonData,
-    userProgressData,
-    userSubscriptionData,
-  ]);
-
-  if (!lesson || !userProgress) return redirect("/learn");
-
-  const initialPercentage =
-    (lesson.challenges.filter((challenge) => challenge.completed).length /
-      lesson.challenges.length) *
-    100;
+const LessonPage: React.FC = () => {
+  useEffect(() => {
+    // Perform the redirect when the component mounts
+    window.location.href = "http://localhost:3001/webcam/"; // Redirecting to another local host link
+  }, []); // Empty dependency array ensures this effect runs only once after the component mounts
 
   return (
-    <div></div>
+    <div>
+      {/* This content will be briefly displayed before the redirect happens */}
+      <p>Redirecting...</p>
+    </div>
   );
 };
 
