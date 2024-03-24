@@ -49,8 +49,18 @@ const QuestsPage: React.FC = () => {
   };
 
   return (
-    <div className="todo-list" style={{ backgroundImage: 'url(/back2.png)' }}>
-      <h1 className="header">BESTIE GOALS</h1> {/* Title/Header */}
+    <div className="todo-list" style={{ backgroundImage: 'url(/back.png)' }}>
+      <br></br>
+      <br></br>
+      <img
+            src="/bestiegoals.png" 
+            height={100}
+            width={500}
+          />
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
       {tasks.map(task => (
         <div key={task.id} className="todo-item">
           <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -76,6 +86,21 @@ const QuestsPage: React.FC = () => {
         />
         <button onClick={() => addTask(text)}>Add</button>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
 
       {/* Styles */}
       <style jsx>{`
