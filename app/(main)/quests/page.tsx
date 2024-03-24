@@ -12,12 +12,12 @@ const QuestsPage: React.FC = () => {
   const [tasks, setTasks] = useState<Task[]>([
     {
       id: 1,
-      text: 'Doctor Appointment',
+      text: 'Drink 10 cups of water a day',
       completed: true
     },
     {
       id: 2,
-      text: 'Meeting at School',
+      text: 'Run a marathon',
       completed: false
     }
   ]);
@@ -49,7 +49,7 @@ const QuestsPage: React.FC = () => {
   };
 
   return (
-    <div className="todo-list">
+    <div className="todo-list" style={{ backgroundImage: 'url(/back2.png)' }}>
       <h1 className="header">BESTIE GOALS</h1> {/* Title/Header */}
       {tasks.map(task => (
         <div key={task.id} className="todo-item">

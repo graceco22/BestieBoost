@@ -16,12 +16,12 @@ const LeaderboardPage = async () => {
   );
 
   return (
-    <div className="flex flex-row-reverse gap-[48px] px-6">
+    <div className="flex flex-row-reverse gap-[48px] px-6" style={{ backgroundImage: 'url(/back2.png)' }}>
 
       <FeedWrapper>
         <div className="flex w-full flex-col items-center">
           <Image
-            src="/Chad.png"
+            src="/chat.png"
             alt="Leaderboard"
             height={90}
             width={90}
@@ -34,7 +34,10 @@ const LeaderboardPage = async () => {
             Ask me anything about your health journey!
           </p>
 
-          <Separator className="mb-4 h-0.5 rounded-full" />
+          <br></br>
+          <br></br>
+
+          {/* <Separator className="mb-4 h-0.5 rounded-full" /> */}
           <DeepChat
           directConnection={{
             cohere: {
